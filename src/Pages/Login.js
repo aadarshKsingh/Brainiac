@@ -7,7 +7,8 @@ import Nav from "../Components/Nav.js";
 import Footer from "../Components/Footer.js";
 function Login() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="flex flex-col">
+      <div className="h-screen flex items-center justify-center">
       <header>
         <Nav page="login"/>
       </header>
@@ -47,14 +48,17 @@ function Login() {
             <button className="bg-[#4361EE] w-96 text-white py-3   rounded-md font-montserrat">
               <p>Log in</p>
             </button>
-            <Divider className="mx-8 pt-4 pb-4" />
+            <Divider className="mx-16 pt-4 pb-4" />
             <button className="bg-[#1E1E1E] w-96 text-white mt-7 py-3 px-5 rounded-md font-montserrat">
               <AccountCircleIcon /> Login as Administrator
             </button>
           </form>
         </div>
       </div>
-      <Footer />
+      </div>
+      <footer className="mt-auto">
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <AppBar
-      position="fixed"
+      position="sticky"
       sx={{ top: "auto", bottom: 0,backgroundColor:"#e6e3ff",color:'black' }}
       
     >

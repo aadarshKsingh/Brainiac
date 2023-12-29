@@ -16,7 +16,7 @@ export const Landing = () => {
       <header>
         <Nav page="login" />
       </header>
-      <div className="flex pt-56 w-screen flex-row items-center  justify-around bg-white">
+      <div className="flex pt-24 w-screen flex-row items-center  justify-around bg-white">
         <div className="flex flex-col">
           <Typography
             variant="h2"
@@ -24,7 +24,7 @@ export const Landing = () => {
               color: "black",
               fontWeight: "bolder",
               lineHeight: "1.5",
-              fontFamily: "albert",
+              fontFamily: "montserrat",
             }}
           >
             Elevate Your Online
@@ -44,11 +44,11 @@ export const Landing = () => {
         </div>
         <img src={Logo} alt="landing_page" height={500} width={800} />
       </div>
-      <div className="flex flex-col w-screen items-center content-center py-36">
+      <div className="flex flex-col w-screen items-center content-center py-24">
         <Typography
           variant="h2"
           className="text-black"
-          sx={{ fontFamily: "albert-sans", fontWeight: "bolder" }}
+          sx={{ fontFamily: "montserrat", fontWeight: "bolder" }}
         >
           Why Choose Us?
         </Typography>
@@ -93,14 +93,14 @@ export const Landing = () => {
         <Typography
           variant="h2"
           className="text-black"
-          sx={{ fontFamily: "albert",
+          sx={{ fontFamily: "montserrat",
         fontWeight:'bolder' }}
         >
           How it works?
         </Typography>
         <Typography
           variant="h6"
-          className="p-2"
+          className="pb-36"
           sx={{ fontFamily: "montserrat" }}
         >
           Discover the Brainiac Workflow
@@ -137,7 +137,7 @@ export const Landing = () => {
         </div>
       </div>
 
-      <footer>
+      <footer className="mt-auto">
         <Footer />
       </footer>
     </>
