@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Login from './Pages/Login';
-import Nav from './Components/Nav';
 import Dashboard from './Pages/Dashboard';
 import { Privacy } from './Pages/Privacy';
 import { Landing } from './Pages/Landing';
-import { Router,Routes,Route, BrowserRouter } from 'react-router-dom';
+import { About } from './Pages/About';
+import {Routes,Route, BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -16,6 +16,7 @@ root.render(
         <Route path='/privacy-policy' element={<Privacy/>} />
         <Route path="/login-student" element={<Login/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/about" element={<About/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

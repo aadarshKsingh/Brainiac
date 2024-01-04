@@ -32,7 +32,7 @@ function Nav(props) {
           className="flex w-5/6 justify-center "
         >
           {props.page==="login" ? <div className="flex flex-row">
-          <NavLink to=''><div className="px-10 font-montserrat">About</div></NavLink>
+          <NavLink to='/about'><div className="px-10 font-montserrat">About</div></NavLink>
           <NavLink to='/privacy-policy'><div className="px-10 font-montserrat">Privacy</div></NavLink>
             </div>:
           <NavLink to='/about-us'><div className="px-10 font-montserrat">Dashboard</div></NavLink>
