@@ -1,6 +1,8 @@
 import { AppBar, Toolbar, IconButton, Typography, Divider, Avatar } from "@mui/material";
 import React from "react";
 import glb from '../Assets/glb.png'
+import { NavLink } from "react-router-dom";
+import { Privacy } from "../Pages/Privacy";
 function Nav(props) {
   return (
     <AppBar color="default" elevation={0}>
@@ -29,11 +31,11 @@ function Nav(props) {
           component="div"
           className="flex w-5/6 justify-center "
         >
-          {props.page==="login" ? <div>
-          <button className="px-10 font-montserrat">About</button>
-          <button className="px-10 font-montserrat">Privacy</button>
+          {props.page==="login" ? <div className="flex flex-row">
+          <NavLink to=''><div className="px-10 font-montserrat">About</div></NavLink>
+          <NavLink to='/privacy-policy'><div className="px-10 font-montserrat">Privacy</div></NavLink>
             </div>:
-          <button className="px-10 font-montserrat">Dashboard</button>
+          <NavLink to='/about-us'><div className="px-10 font-montserrat">Dashboard</div></NavLink>
           }
           
         </Typography>

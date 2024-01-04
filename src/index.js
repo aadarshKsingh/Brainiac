@@ -4,13 +4,20 @@ import './index.css';
 import Login from './Pages/Login';
 import Nav from './Components/Nav';
 import Dashboard from './Pages/Dashboard';
+import { Privacy } from './Pages/Privacy';
 import { Landing } from './Pages/Landing';
+import { Router,Routes,Route, BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Dashboard /> */}
-    <Login/>
-    {/* <Landing/> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Landing/>} />
+        <Route path='/privacy-policy' element={<Privacy/>} />
+        <Route path="/login-student" element={<Login/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
