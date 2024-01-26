@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import {
   AssignmentIndRounded,
+  BookRounded,
   ChatRounded,
   LeaderboardRounded,
   ScheduleRounded,
@@ -89,10 +90,19 @@ function Sidebar() {
               </ListItem>
 
               <ListItem>
+              <NavLink to="/books">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <BookRounded/>
+                <p className="pl-11 pr-28 mr-3">Books</p>
+                </div>
+                </NavLink>
+              </ListItem>
+
+              <ListItem>
               <NavLink to="/leaderboard">
                 <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
                 <LeaderboardRounded/>
-                <p className="pl-11 pr-20">Leaderboard</p>
+                <p className="pl-11 pr-16 mr-2">Leaderboard</p>
                 </div>
                 </NavLink>
               

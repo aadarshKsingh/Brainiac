@@ -35,7 +35,7 @@ function Nav(props) {
           <NavLink to='/about'><div className="px-10 font-montserrat">About</div></NavLink>
           <NavLink to='/privacy-policy'><div className="px-10 font-montserrat">Privacy</div></NavLink>
             </div>:
-          <NavLink to='/about-us'><div className="px-10 font-montserrat">Dashboard</div></NavLink>
+          <NavLink><div className="px-10 font-montserrat">Dashboard</div></NavLink>
           }
           
         </Typography>

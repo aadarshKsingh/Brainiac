@@ -7,6 +7,7 @@ import { Privacy } from './Pages/Privacy';
 import { Landing } from './Pages/Landing';
 import { About } from './Pages/About';
 import {Routes,Route, BrowserRouter } from 'react-router-dom';
+import { Books } from './Pages/Books';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ root.render(
         <Route path="/login-student" element={<Login/>} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/books" element={<Books/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
