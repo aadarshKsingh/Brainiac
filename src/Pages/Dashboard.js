@@ -11,7 +11,7 @@ function Dashboard() {
       <Sidebar />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-2">
           <ScheduleMini />
           <AnnouncementMini />
           <LeaderboardMini />

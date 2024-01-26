@@ -2,7 +2,7 @@ import { AppBar, Toolbar, IconButton, Typography, Divider, Avatar } from "@mui/m
 import React from "react";
 import glb from '../Assets/glb.png'
 import { NavLink } from "react-router-dom";
-import { Privacy } from "../Pages/Privacy";
+
 function Nav(props) {
   return (
     <AppBar color="default" elevation={0}>
@@ -16,8 +16,8 @@ function Nav(props) {
         <Typography variant="h6" color="inherit" component="div">
          {props.page === "login" ?  <NavLink to="/"><p className="text-[#4361EE] py-5 font-albert text-3xl">Brainiac</p></NavLink> :
           <div className="flex  align-middle  place-items-center">
-            <NavLink to="https://glbitm.org"><img className="py-5 px-2" src={glb} alt="glb logo"/></NavLink>
-            <Divider className="my-10 p-2 py-8" orientation="vertical"/>
+            <NavLink to="https://glbitm.org"><img className="py-5 px-2 w-36 h-20" src={glb} alt="glb logo"/></NavLink>
+            <Divider className="my-10 p-2 py-7" orientation="vertical"/>
             <NavLink to="/"><div className="flex flex-col mx-5">
               <Typography variant="subtitle1"><p className="font-montserrat leading-none">powered by</p></Typography>
             <Typography variant="h4"><p className="font-albert text-[#4361EE] leading-none">Brainiac</p></Typography>
