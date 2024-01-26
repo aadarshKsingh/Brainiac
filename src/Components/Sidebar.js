@@ -1,11 +1,10 @@
 import React from "react";
 import Nav from "./Nav";
+import { NavLink } from "react-router-dom";
 import {
   Drawer,
   List,
   ListItem,
-  ListItemButton,
-  ListItemIcon,
   ListItemText,
 } from "@mui/material";
 import {
@@ -44,115 +43,68 @@ function Sidebar() {
                 <ListItemText primary="placeholder" />
               </ListItem>
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-100px" }}>
-                  <ListItemIcon>
-                    <SpaceDashboardRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Dashboard"
-                />
+                <NavLink to="/dashboard">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat">
+                <SpaceDashboardRounded/>
+                <p className="pl-11 pr-20">Dashboard</p>
+                </div>
+                </NavLink>
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-70px" }}>
-                  <ListItemIcon>
-                    <ScheduleRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Class Schedule"
-                />
+              <NavLink to="/schedule">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <ScheduleRounded/>
+                <p className="pl-11 pr-12">Class Schedule</p>
+                </div>
+                </NavLink>
+                
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-40px" }}>
-                  <ListItemIcon>
-                    <VideocamRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Recorded Sessions"
-                />
+              <NavLink to="/rsessions">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <VideocamRounded/>
+                <p className="pl-11 pr-5">Recorded Sessions</p>
+                </div>
+                </NavLink>
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-25px" }}>
-                  <ListItemIcon>
-                    <AssignmentIndRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Tests & Assignments"
-                />
+              <NavLink to="/tests">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <AssignmentIndRounded/>
+                <p className="pl-11 pr-3">Tests & Assignments</p>
+                </div>
+                </NavLink>
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-80px" }}>
-                  <ListItemIcon>
-                    <ChatRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Communities"
-                />
+              <NavLink to="/communities">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <ChatRounded/>
+                <p className="pl-11 pr-16">Communities</p>
+                </div>
+                </NavLink>
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-85px" }}>
-                  <ListItemIcon>
-                    <LeaderboardRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Leaderboard"
-                />
+              <NavLink to="/leaderboard">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <LeaderboardRounded/>
+                <p className="pl-11 pr-20">Leaderboard</p>
+                </div>
+                </NavLink>
+              
               </ListItem>
 
               <ListItem>
-                <ListItemButton sx={{ marginRight: "-120px" }}>
-                  <ListItemIcon>
-                    <VerifiedUserRounded />
-                  </ListItemIcon>
-                </ListItemButton>
-                <ListItemText
-                  sx={{
-                    ".MuiListItemText-primary": {
-                      fontFamily: "montserrat",
-                    },
-                  }}
-                  primary="Account"
-                />
+              <NavLink to="/account">
+                <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
+                <VerifiedUserRounded/>
+                <p className="pl-11 pr-28">Account</p>
+                </div>
+                </NavLink>
               </ListItem>
             </List>
           </div>

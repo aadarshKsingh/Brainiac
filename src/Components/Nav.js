@@ -14,14 +14,14 @@ function Nav(props) {
           sx={{ mr: 2 }}
         ></IconButton>
         <Typography variant="h6" color="inherit" component="div">
-         {props.page === "login" ?  <p className="text-[#4361EE] py-5 font-albert text-3xl">Brainiac</p> :
+         {props.page === "login" ?  <NavLink to="/"><p className="text-[#4361EE] py-5 font-albert text-3xl">Brainiac</p></NavLink> :
           <div className="flex  align-middle  place-items-center">
-            <img className="py-5 px-2" src={glb} alt="glb logo"/>
+            <NavLink to="https://glbitm.org"><img className="py-5 px-2" src={glb} alt="glb logo"/></NavLink>
             <Divider className="my-10 p-2 py-8" orientation="vertical"/>
-            <div className="flex flex-col mx-5">
+            <NavLink to="/"><div className="flex flex-col mx-5">
               <Typography variant="subtitle1"><p className="font-montserrat leading-none">powered by</p></Typography>
             <Typography variant="h4"><p className="font-albert text-[#4361EE] leading-none">Brainiac</p></Typography>
-            </div>
+            </div></NavLink>
           </div>
          }
         </Typography>
@@ -41,9 +41,10 @@ function Nav(props) {
         </Typography>
         {props.page === "login" ? 
         <Typography component="div">
-          <button className="text-white bg-[#4361EE] py-2 px-3 rounded-lg font-montserrat">
+          <NavLink to="mailto:brainiac@pm.me"><p className="text-white bg-[#4361EE] py-2 px-3 rounded-lg font-montserrat">
             Contact Us
-          </button>
+          </p>
+          </NavLink>
         </Typography>:
           <Typography component="div" className="flex flex-row"><p className="p-2 font-montserrat">$Student_Name</p><Avatar src="#">SN</Avatar></Typography>
           

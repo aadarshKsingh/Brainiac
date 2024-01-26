@@ -10,6 +10,7 @@ import {
   TaskAltRounded,
   TextSnippetRounded,
 } from "@mui/icons-material";
+import { NavLink } from "react-router-dom";
 export const Landing = () => {
   return (
     <>
@@ -38,9 +39,9 @@ export const Landing = () => {
             Revolutionize How Institutions Teach
             <br /> and Learn
           </Typography>
-          <button className="my-5 btn bg-[#4361EE] w-36 font-montserrat text-white">
-            Get Started
-          </button>
+        <NavLink to="/login-student">
+            <p className="btn bg-[#4361EE] text-white mt-4 font-montserrat">Get Started</p>
+        </NavLink>
         </div>
         <img src={Logo} alt="landing_page" height={500} width={800} />
       </div>

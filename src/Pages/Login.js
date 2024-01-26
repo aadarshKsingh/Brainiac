@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import { Link } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import image from "../Assets/login.png";
 import Divider from "@mui/material/Divider";
