@@ -3,7 +3,7 @@ import Sidebar from "../Components/Sidebar";
 import { Box, Toolbar } from "@mui/material";
 import { ScheduleMini } from "../Components/ScheduleMini";
 import { AnnouncementMini } from "../Components/AnnouncementMini";
-import { LeaderboardMini } from "../Components/LeaderboardMini";
+import { LeaderboardMini } from "../Components/LBoardMini";
 import { AssignmentMini } from "../Components/AssignmentMini";
 function Dashboard() {
   return (

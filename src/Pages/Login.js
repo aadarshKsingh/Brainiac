@@ -5,7 +5,7 @@ import Divider from "@mui/material/Divider";
 import Nav from "../Components/Nav.js";
 import Footer from "../Components/Footer.js";
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [userEmail, setEmail] = useState('');

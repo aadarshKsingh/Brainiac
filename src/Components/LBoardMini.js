@@ -1,6 +1,7 @@
 import React from 'react'
 import { Leaderboard } from 'flywheel-leaderboard'
 import { LeaderboardRounded } from '@mui/icons-material'
+import { NavLink } from 'react-router-dom'
 export const LeaderboardMini = () => {
     const data = [
         {
@@ -38,10 +39,10 @@ export const LeaderboardMini = () => {
 
             </Leaderboard>
             <div className='flex justify-end'>
-                <button>
+                <NavLink to="/lboard">
                   <LeaderboardRounded/>
                   View Leaderboard
-                </button>
+                </NavLink>
               </div>
               </div>
           </div>)

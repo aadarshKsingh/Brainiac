@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography } from '@mui/material'
-// import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { NavLink } from 'react-router-dom';
 import { Datepicker, } from "@meinefinsternis/react-horizontal-date-picker";
 import { CalendarMonthRounded} from '@mui/icons-material';
 export const ScheduleMini = () => {
@@ -57,10 +57,10 @@ export const ScheduleMini = () => {
                 </ul>
               </div>
               <div className='flex w-screen/2 p-3 justify-end'>
-                <button>
+                <NavLink to="/schedule">
                   <CalendarMonthRounded/>
                   View Schedule
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>

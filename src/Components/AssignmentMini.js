@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from '@mui/material'
 import { AssignmentIndRounded } from '@mui/icons-material'
+import { NavLink } from 'react-router-dom'
 export const AssignmentMini = () => {
   return (
     <div className="px-10 flex flex-col">
@@ -56,10 +57,10 @@ export const AssignmentMini = () => {
             </li>
         </ul>
         <div className='flex w-screen/2 p-3 justify-end'>
-                <button>
+                <NavLink to="/assignments">
                   <AssignmentIndRounded/>
                   View Assignments
-                </button>
+                </NavLink>
               </div>
     </div>
   </div>

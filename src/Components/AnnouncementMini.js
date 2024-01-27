@@ -1,6 +1,7 @@
 import React from 'react'
 import { Avatar, Typography } from '@mui/material'
 import { AnnouncementRounded } from '@mui/icons-material'
+import { NavLink } from 'react-router-dom'
 export const AnnouncementMini = () => {
   return (
     <div className=" p-11 flex flex-col">
@@ -67,10 +68,10 @@ export const AnnouncementMini = () => {
         
     </div>
     <div className='flex w-screen/2 p-7 justify-end'>
-                <button>
+                <NavLink to="/announcements">
                   <AnnouncementRounded/>
                   View All Announcements
-                </button>
+                </NavLink>
             </div>
     </div>
            
