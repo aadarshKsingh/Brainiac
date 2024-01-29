@@ -70,7 +70,7 @@ function Sidebar() {
                 </div>
                 </NavLink>
               </ListItem>
-
+{/* 
               <ListItem>
               <NavLink to="/assignments">
                 <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
@@ -78,7 +78,7 @@ function Sidebar() {
                 <p className="pl-11 pr-3">Tests & Assignments</p>
                 </div>
                 </NavLink>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem>
               <NavLink to="/communities">
@@ -98,7 +98,7 @@ function Sidebar() {
                 </NavLink>
               </ListItem>
 
-              <ListItem>
+              {/* <ListItem>
               <NavLink to="/lboard">
                 <div className="hover:bg-gray-200 transition duration-900 rounded-lg flex flex-row items-start pl-3 py-3 font-montserrat whitespace-nowrap">
                 <LeaderboardRounded/>
@@ -106,7 +106,7 @@ function Sidebar() {
                 </div>
                 </NavLink>
               
-              </ListItem>
+              </ListItem> */}
 
               <ListItem>
               <NavLink to="/account">

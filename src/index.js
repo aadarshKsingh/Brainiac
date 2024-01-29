@@ -11,7 +11,6 @@ import { Books } from './Pages/Books';
 import { Announcements } from './Pages/Announcements';
 import { Schedule } from './Pages/Schedule';
 import { Assignment } from './Pages/Assignment';
-import { Leaderboard } from 'flywheel-leaderboard';
 import { Sessions } from './Pages/Sessions';
 import { Communities } from './Pages/Communities';
 import { Account } from './Pages/Account';
