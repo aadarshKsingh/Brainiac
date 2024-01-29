@@ -4,10 +4,13 @@ import glb from '../Assets/glb.png'
 import { NavLink } from "react-router-dom";
 import { Menu, MenuItem } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { useSessionStorage } from "react-storage-complete";
 function Nav(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const navigate = useNavigate();
   const open = Boolean(anchorEl);
+  const [accessToken,setAccessToken] = useSessionStorage('access_token', '');
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -16,7 +19,8 @@ function Nav(props) {
   };
 
   const handleLogout = () => {
-
+      setAccessToken('')
+      navigate("/login-student")
   }
 
   const handleAccount = () => {

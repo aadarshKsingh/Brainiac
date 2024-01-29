@@ -6,13 +6,15 @@ import Nav from "../Components/Nav.js";
 import Footer from "../Components/Footer.js";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { useSessionStorage } from 'react-storage-complete';
+// import { useSessionStorage} from "react-use-window-sessionstorage";
 function Login() {
   const [userEmail, setEmail] = useState('');
   const [userPassword, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [showError, setShowError] = useState(false);
+  const [accessToken, setAccessToken] = useSessionStorage('access_token','');
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
@@ -28,6 +30,9 @@ function Login() {
         .then((data) => {
           if (data.error !== "Unauthorised Access") {
             setShowError(false)
+            setAccessToken(data.access_token)
+            // console.log(data.access_token)
+            console.log(accessToken)
             navigate("/dashboard");
           } else {
             setShowError(true);

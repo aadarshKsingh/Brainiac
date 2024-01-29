@@ -19,7 +19,9 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "react-storage-complete": "^1.1.5",
     "react-use-measure": "^2.1.1",
+    "react-use-window-sessionstorage": "^1.0.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
